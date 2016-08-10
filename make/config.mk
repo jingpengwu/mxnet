@@ -66,7 +66,7 @@ UNAME_S := $(shell uname -s)
 ifeq ($(UNAME_S), Darwin)
 USE_BLAS = apple
 else
-USE_BLAS = atlas
+USE_BLAS = mkl
 endif
 
 # add path to intel library, you may need it for MKL, if you did not add the path
